@@ -16,6 +16,15 @@ This repository studies the worst-case source-query cost of answering sequential
 - Reproduction commands, observed outputs and finite-check limits: verification/README.md
 - Executable verification and reference result: verification/check_bounds.py, verification/results.json
 
+## Learning route
+
+- Shared study entrypoint and connection to the scientific account: learning/README.md
+- Single educational anchor: Andrew M. Childs, Lecture Notes on Quantum Algorithms, 17 April 2025; https://www.cs.umd.edu/~amchilds/qa/qa.pdf
+- Selected sections, notation/access translation, worked example and source-to-project derivations: learning/childs-bridge.md
+- Exactly 30 common understanding targets: learning/milestones.md; M01–M12 are background/preliminaries, M13–M30 are narrative/innovation.
+
+For the conceptual story, begin with the learning route and bridge, then follow the milestone dependencies into the canonical scientific pages. For a theorem or proof question, go directly to the exact model or the relevant proof. Childs supplies the educational foundation; Huggins and other primary research references retain their separate role as imported ingredients and comparisons. The bridge does not replace the authoritative theorem or claim that the online result appears in the anchor.
+
 ## Essential distinctions
 
 The main theorem concerns a worst-case source unitary and known observable menu. It does not claim hardness for every implementation of the same prepared state. A coherently controlled oracle invocation costs a full query; a classical branch on which no invocation occurs costs zero. The theorem includes all preprocessing and input-dependent stopping.
