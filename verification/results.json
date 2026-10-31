@@ -1,0 +1,1782 @@
+{
+  "active_flag_metrics": {
+    "extremal": {
+      "activity_bound_violation_max": 0.0,
+      "activity_identity_residual_max": 1.1102230246251565e-16,
+      "activity_weight_residual_max": 1.1102230246251565e-15,
+      "samples": 8
+    },
+    "random": {
+      "activity_bound_violation_max": 0.0,
+      "activity_identity_residual_max": 1.6653345369377348e-16,
+      "activity_weight_residual_max": 4.440892098500626e-16,
+      "samples": 288
+    }
+  },
+  "configuration": {
+    "L_values": [
+      2,
+      3,
+      4
+    ],
+    "absolute_tolerance": 5e-11,
+    "activity_probabilities": [
+      0.0,
+      0.125,
+      0.5,
+      1.0
+    ],
+    "precision_fractions_of_upper_bound": [
+      0.1,
+      0.5,
+      1.0
+    ],
+    "precision_upper_bound": "1/(2*sqrt(2*L))",
+    "random_seed": 20261031,
+    "relative_tolerance": 5e-11,
+    "subsets_zero_based": {
+      "2": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "3": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "4": [
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  "counts": {
+    "extremal_active_flag_samples": 8,
+    "fresh_subset_averaging_cases": 8,
+    "hidden_input_states": 168,
+    "mean_values": 576,
+    "random_active_flag_samples": 288,
+    "scalar_assertions": 3083,
+    "source_oracles": 18,
+    "subset_operator_cases": 72
+  },
+  "environment": {
+    "dtype": "complex128 / float64",
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "extremal_active_flag_cases": [
+    {
+      "family": "star",
+      "samples": [
+        {
+          "absolute_progress_change": 0.0,
+          "activity_probability": 0.0,
+          "activity_times_exact_norm": 0.0,
+          "activity_times_proved_bound": 0.0
+        },
+        {
+          "absolute_progress_change": 0.16535945694153692,
+          "activity_probability": 0.125,
+          "activity_times_exact_norm": 0.16535945694153698,
+          "activity_times_proved_bound": 0.5000000000000001
+        },
+        {
+          "absolute_progress_change": 0.6614378277661477,
+          "activity_probability": 0.5,
+          "activity_times_exact_norm": 0.6614378277661479,
+          "activity_times_proved_bound": 2.0000000000000004
+        },
+        {
+          "absolute_progress_change": 1.3228756555322954,
+          "activity_probability": 1.0,
+          "activity_times_exact_norm": 1.3228756555322958,
+          "activity_times_proved_bound": 4.000000000000001
+        }
+      ]
+    },
+    {
+      "family": "product",
+      "samples": [
+        {
+          "absolute_progress_change": 0.0,
+          "activity_probability": 0.0,
+          "activity_times_exact_norm": 0.0,
+          "activity_times_proved_bound": 0.0
+        },
+        {
+          "absolute_progress_change": 0.16535945694153703,
+          "activity_probability": 0.125,
+          "activity_times_exact_norm": 0.16535945694153698,
+          "activity_times_proved_bound": 0.5
+        },
+        {
+          "absolute_progress_change": 0.6614378277661482,
+          "activity_probability": 0.5,
+          "activity_times_exact_norm": 0.6614378277661479,
+          "activity_times_proved_bound": 2.0
+        },
+        {
+          "absolute_progress_change": 1.3228756555322967,
+          "activity_probability": 1.0,
+          "activity_times_exact_norm": 1.3228756555322958,
+          "activity_times_proved_bound": 4.0
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "fresh_subset_averaging": {
+    "cases": 8,
+    "matrix_residual_max": 0.0
+  },
+  "metrics": {
+    "product": {
+      "A_commutator_gram_residual_max": 4.440892098500626e-16,
+      "A_commutator_squared_norm_residual_max": 4.440892098500626e-16,
+      "Gamma_affine_identity_residual_max": 1.1102230246251565e-16,
+      "Gamma_commutator_bound_ratio_max": 0.3534428878899681,
+      "U_commutator_bound_ratio_max": 0.3534428878899681,
+      "commutator_bound_violation_max": 0.0,
+      "fourier_isometry_residual_max": 2.220446049250313e-16,
+      "fourier_oracle_residual_max": 4.440892098500626e-16,
+      "inverse_action_residual_max": 3.3306690738754696e-16,
+      "isometry_normalization_residual_max": 6.661338147750939e-16,
+      "mean_formula_residual_max": 1.1102230246251565e-16,
+      "mean_margin_over_epsilon_min": 3.464101615137754,
+      "observable_commutation_residual_max": 0.0,
+      "oracle_hermiticity_residual_max": 0.0,
+      "oracle_unitarity_residual_max": 8.881784197001252e-16,
+      "preparation_action_residual_max": 0.0
+    },
+    "star": {
+      "Gamma_affine_identity_residual_max": 1.1102230246251565e-16,
+      "Gamma_commutator_bound_ratio_max": 0.35355339059327456,
+      "U_commutator_bound_ratio_max": 0.35355339059327456,
+      "V_commutator_norm_residual_max": 6.661338147750939e-16,
+      "commutator_bound_violation_max": 0.0,
+      "fourier_isometry_residual_max": 3.3306690738754696e-16,
+      "fourier_oracle_residual_max": 3.3306690738754696e-16,
+      "inverse_action_residual_max": 2.220446049250313e-16,
+      "isometry_normalization_residual_max": 6.661338147750939e-16,
+      "mean_formula_residual_max": 1.3877787807814457e-17,
+      "mean_margin_over_epsilon_min": 2.82842712474619,
+      "oracle_hermiticity_residual_max": 0.0,
+      "oracle_unitarity_residual_max": 6.661338147750939e-16,
+      "preparation_action_residual_max": 0.0
+    }
+  },
+  "schema_version": 1,
+  "scope": "Finite operator checks; not a proof of the general theorem or a novelty test.",
+  "source_cases": [
+    {
+      "L": 2,
+      "epsilon": 0.025,
+      "family": "star",
+      "fourier_isometry_residual": 0.0,
+      "fourier_oracle_residual": 0.0,
+      "isometry_normalization_residual": 2.220446049250313e-16,
+      "joint_input_source_dimension": 16,
+      "mean_margin_over_epsilon": 3.989987468652,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 2.220446049250313e-16,
+      "precision_fraction": 0.1,
+      "source_dimension": 4
+    },
+    {
+      "L": 2,
+      "epsilon": 0.125,
+      "family": "star",
+      "fourier_isometry_residual": 0.0,
+      "fourier_oracle_residual": 0.0,
+      "isometry_normalization_residual": 0.0,
+      "joint_input_source_dimension": 16,
+      "mean_margin_over_epsilon": 3.7416573867739413,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 2.42861286636753e-17,
+      "precision_fraction": 0.5,
+      "source_dimension": 4
+    },
+    {
+      "L": 2,
+      "epsilon": 0.25,
+      "family": "star",
+      "fourier_isometry_residual": 0.0,
+      "fourier_oracle_residual": 0.0,
+      "isometry_normalization_residual": 1.1102230246251565e-16,
+      "joint_input_source_dimension": 16,
+      "mean_margin_over_epsilon": 2.82842712474619,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 1.1102230246251565e-16,
+      "precision_fraction": 1.0,
+      "source_dimension": 4
+    },
+    {
+      "L": 3,
+      "epsilon": 0.020412414523193152,
+      "family": "star",
+      "fourier_isometry_residual": 1.1102230246251565e-16,
+      "fourier_oracle_residual": 2.220446049250313e-16,
+      "isometry_normalization_residual": 3.3306690738754696e-16,
+      "joint_input_source_dimension": 40,
+      "mean_margin_over_epsilon": 3.989987468652,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 5.551115123125783e-16,
+      "precision_fraction": 0.1,
+      "source_dimension": 5
+    },
+    {
+      "L": 3,
+      "epsilon": 0.10206207261596577,
+      "family": "star",
+      "fourier_isometry_residual": 2.220446049250313e-16,
+      "fourier_oracle_residual": 2.220446049250313e-16,
+      "isometry_normalization_residual": 5.551115123125783e-16,
+      "joint_input_source_dimension": 40,
+      "mean_margin_over_epsilon": 3.741657386773941,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 5.551115123125783e-16,
+      "precision_fraction": 0.5,
+      "source_dimension": 5
+    },
+    {
+      "L": 3,
+      "epsilon": 0.20412414523193154,
+      "family": "star",
+      "fourier_isometry_residual": 2.220446049250313e-16,
+      "fourier_oracle_residual": 2.220446049250313e-16,
+      "isometry_normalization_residual": 3.3306690738754696e-16,
+      "joint_input_source_dimension": 40,
+      "mean_margin_over_epsilon": 2.8284271247461903,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.661338147750939e-16,
+      "precision_fraction": 1.0,
+      "source_dimension": 5
+    },
+    {
+      "L": 4,
+      "epsilon": 0.017677669529663688,
+      "family": "star",
+      "fourier_isometry_residual": 3.3306690738754696e-16,
+      "fourier_oracle_residual": 3.3306690738754696e-16,
+      "isometry_normalization_residual": 6.661338147750939e-16,
+      "joint_input_source_dimension": 96,
+      "mean_margin_over_epsilon": 3.989987468652,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.661338147750939e-16,
+      "precision_fraction": 0.1,
+      "source_dimension": 6
+    },
+    {
+      "L": 4,
+      "epsilon": 0.08838834764831843,
+      "family": "star",
+      "fourier_isometry_residual": 3.3306690738754696e-16,
+      "fourier_oracle_residual": 3.3306690738754696e-16,
+      "isometry_normalization_residual": 6.661338147750939e-16,
+      "joint_input_source_dimension": 96,
+      "mean_margin_over_epsilon": 3.7416573867739413,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.661338147750939e-16,
+      "precision_fraction": 0.5,
+      "source_dimension": 6
+    },
+    {
+      "L": 4,
+      "epsilon": 0.17677669529663687,
+      "family": "star",
+      "fourier_isometry_residual": 2.220446049250313e-16,
+      "fourier_oracle_residual": 2.220446049250313e-16,
+      "isometry_normalization_residual": 6.661338147750939e-16,
+      "joint_input_source_dimension": 96,
+      "mean_margin_over_epsilon": 2.8284271247461903,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.661338147750939e-16,
+      "precision_fraction": 1.0,
+      "source_dimension": 6
+    },
+    {
+      "L": 2,
+      "epsilon": 0.025,
+      "family": "product",
+      "fourier_isometry_residual": 0.0,
+      "fourier_oracle_residual": 0.0,
+      "isometry_normalization_residual": 2.220446049250313e-16,
+      "joint_input_source_dimension": 20,
+      "mean_margin_over_epsilon": 3.994996871087636,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 2.220446049250313e-16,
+      "precision_fraction": 0.1,
+      "source_dimension": 5
+    },
+    {
+      "L": 2,
+      "epsilon": 0.125,
+      "family": "product",
+      "fourier_isometry_residual": 0.0,
+      "fourier_oracle_residual": 0.0,
+      "isometry_normalization_residual": 2.220446049250313e-16,
+      "joint_input_source_dimension": 20,
+      "mean_margin_over_epsilon": 3.872983346207417,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 2.220446049250313e-16,
+      "precision_fraction": 0.5,
+      "source_dimension": 5
+    },
+    {
+      "L": 2,
+      "epsilon": 0.25,
+      "family": "product",
+      "fourier_isometry_residual": 0.0,
+      "fourier_oracle_residual": 0.0,
+      "isometry_normalization_residual": 2.220446049250313e-16,
+      "joint_input_source_dimension": 20,
+      "mean_margin_over_epsilon": 3.4641016151377544,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 2.220446049250313e-16,
+      "precision_fraction": 1.0,
+      "source_dimension": 5
+    },
+    {
+      "L": 3,
+      "epsilon": 0.020412414523193152,
+      "family": "product",
+      "fourier_isometry_residual": 2.220446049250313e-16,
+      "fourier_oracle_residual": 2.220446049250313e-16,
+      "isometry_normalization_residual": 5.551115123125783e-16,
+      "joint_input_source_dimension": 72,
+      "mean_margin_over_epsilon": 3.9966652766191637,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.661338147750939e-16,
+      "precision_fraction": 0.1,
+      "source_dimension": 9
+    },
+    {
+      "L": 3,
+      "epsilon": 0.10206207261596577,
+      "family": "product",
+      "fourier_isometry_residual": 1.1102230246251565e-16,
+      "fourier_oracle_residual": 2.3592239273284576e-16,
+      "isometry_normalization_residual": 3.3306690738754696e-16,
+      "joint_input_source_dimension": 72,
+      "mean_margin_over_epsilon": 3.9157800414902435,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 4.440892098500626e-16,
+      "precision_fraction": 0.5,
+      "source_dimension": 9
+    },
+    {
+      "L": 3,
+      "epsilon": 0.20412414523193154,
+      "family": "product",
+      "fourier_isometry_residual": 2.220446049250313e-16,
+      "fourier_oracle_residual": 2.220446049250313e-16,
+      "isometry_normalization_residual": 6.661338147750939e-16,
+      "joint_input_source_dimension": 72,
+      "mean_margin_over_epsilon": 3.6514837167011067,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.661338147750939e-16,
+      "precision_fraction": 1.0,
+      "source_dimension": 9
+    },
+    {
+      "L": 4,
+      "epsilon": 0.017677669529663688,
+      "family": "product",
+      "fourier_isometry_residual": 4.163336342344337e-17,
+      "fourier_oracle_residual": 4.440892098500626e-16,
+      "isometry_normalization_residual": 2.220446049250313e-16,
+      "joint_input_source_dimension": 272,
+      "mean_margin_over_epsilon": 3.997499218261337,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 8.881784197001252e-16,
+      "precision_fraction": 0.1,
+      "source_dimension": 17
+    },
+    {
+      "L": 4,
+      "epsilon": 0.08838834764831843,
+      "family": "product",
+      "fourier_isometry_residual": 1.0408340855860843e-17,
+      "fourier_oracle_residual": 2.7755575615628914e-17,
+      "isometry_normalization_residual": 1.3724699950266223e-17,
+      "joint_input_source_dimension": 272,
+      "mean_margin_over_epsilon": 3.9370039370059056,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 6.876552278989312e-17,
+      "precision_fraction": 0.5,
+      "source_dimension": 17
+    },
+    {
+      "L": 4,
+      "epsilon": 0.17677669529663687,
+      "family": "product",
+      "fourier_isometry_residual": 1.1102230246251565e-16,
+      "fourier_oracle_residual": 1.1102230246251565e-16,
+      "isometry_normalization_residual": 2.220446049250313e-16,
+      "joint_input_source_dimension": 272,
+      "mean_margin_over_epsilon": 3.7416573867739413,
+      "oracle_hermiticity_residual": 0.0,
+      "oracle_unitarity_residual": 2.220446049250313e-16,
+      "precision_fraction": 1.0,
+      "source_dimension": 17
+    }
+  ],
+  "status": "pass",
+  "subset_cases": [
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.4000000000000001,
+      "Gamma_commutator_norm": 0.14133294025102572,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.025,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865475,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.20000000000000004,
+      "source_commutator_norm": 0.07066647012551286,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.4000000000000001,
+      "Gamma_commutator_norm": 0.14133294025102572,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.025,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865475,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.20000000000000004,
+      "source_commutator_norm": 0.07066647012551286,
+      "subset_zero_based": [
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.28284271247461906,
+      "Gamma_commutator_norm": 0.10000000000000003,
+      "L": 2,
+      "b": 2,
+      "epsilon": 0.025,
+      "family": "star",
+      "isometry_commutator_norm": 0.9999999999999999,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.28284271247461906,
+      "source_commutator_norm": 0.10000000000000003,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.0000000000000004,
+      "Gamma_commutator_norm": 0.6959705453537529,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.125,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865475,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0000000000000002,
+      "source_commutator_norm": 0.34798527267687646,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.0000000000000004,
+      "Gamma_commutator_norm": 0.6959705453537529,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.125,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865475,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0000000000000002,
+      "source_commutator_norm": 0.34798527267687646,
+      "subset_zero_based": [
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.4142135623730951,
+      "Gamma_commutator_norm": 0.5000000000000002,
+      "L": 2,
+      "b": 2,
+      "epsilon": 0.125,
+      "family": "star",
+      "isometry_commutator_norm": 0.9999999999999999,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.4142135623730951,
+      "source_commutator_norm": 0.5000000000000002,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 4.000000000000001,
+      "Gamma_commutator_norm": 1.3228756555322954,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.25,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865475,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.0000000000000004,
+      "source_commutator_norm": 0.6614378277661477,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 4.000000000000001,
+      "Gamma_commutator_norm": 1.3228756555322954,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.25,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865475,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.0000000000000004,
+      "source_commutator_norm": 0.6614378277661477,
+      "subset_zero_based": [
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.8284271247461903,
+      "Gamma_commutator_norm": 1.0000000000000002,
+      "L": 2,
+      "b": 2,
+      "epsilon": 0.25,
+      "family": "star",
+      "isometry_commutator_norm": 0.9999999999999999,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.8284271247461903,
+      "source_commutator_norm": 1.0000000000000002,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.3265986323710904,
+      "Gamma_commutator_norm": 0.11542193128787193,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.020412414523193152,
+      "family": "star",
+      "isometry_commutator_norm": 0.5773502691896262,
+      "isometry_commutator_norm_formula": 0.5773502691896257,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.1632993161855452,
+      "source_commutator_norm": 0.05771096564393596,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.3265986323710904,
+      "Gamma_commutator_norm": 0.11542193128787194,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.020412414523193152,
+      "family": "star",
+      "isometry_commutator_norm": 0.577350269189626,
+      "isometry_commutator_norm_formula": 0.5773502691896257,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.1632993161855452,
+      "source_commutator_norm": 0.05771096564393597,
+      "subset_zero_based": [
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.2309401076758503,
+      "Gamma_commutator_norm": 0.08164965809277264,
+      "L": 3,
+      "b": 2,
+      "epsilon": 0.020412414523193152,
+      "family": "star",
+      "isometry_commutator_norm": 0.8164965809277263,
+      "isometry_commutator_norm_formula": 0.816496580927726,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.2309401076758503,
+      "source_commutator_norm": 0.08164965809277264,
+      "subset_zero_based": [
+        0,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.18856180831641267,
+      "Gamma_commutator_norm": 0.06665740676431404,
+      "L": 3,
+      "b": 3,
+      "epsilon": 0.020412414523193152,
+      "family": "star",
+      "isometry_commutator_norm": 1.0000000000000002,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.282842712474619,
+      "source_commutator_norm": 0.09998611014647105,
+      "subset_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.632993161855452,
+      "Gamma_commutator_norm": 0.5713045500334205,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.10206207261596577,
+      "family": "star",
+      "isometry_commutator_norm": 0.5773502691896261,
+      "isometry_commutator_norm_formula": 0.5773502691896257,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.816496580927726,
+      "source_commutator_norm": 0.28565227501671026,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.632993161855452,
+      "Gamma_commutator_norm": 0.5713045500334208,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.10206207261596577,
+      "family": "star",
+      "isometry_commutator_norm": 0.5773502691896261,
+      "isometry_commutator_norm_formula": 0.5773502691896257,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.816496580927726,
+      "source_commutator_norm": 0.2856522750167104,
+      "subset_zero_based": [
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.1547005383792517,
+      "Gamma_commutator_norm": 0.4082482904638634,
+      "L": 3,
+      "b": 2,
+      "epsilon": 0.10206207261596577,
+      "family": "star",
+      "isometry_commutator_norm": 0.8164965809277263,
+      "isometry_commutator_norm_formula": 0.816496580927726,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.1547005383792517,
+      "source_commutator_norm": 0.4082482904638634,
+      "subset_zero_based": [
+        0,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.9428090415820635,
+      "Gamma_commutator_norm": 0.33217390953059456,
+      "L": 3,
+      "b": 3,
+      "epsilon": 0.10206207261596577,
+      "family": "star",
+      "isometry_commutator_norm": 1.0000000000000007,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.4142135623730951,
+      "source_commutator_norm": 0.498260864295892,
+      "subset_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 3.265986323710904,
+      "Gamma_commutator_norm": 1.1055415967851345,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.20412414523193154,
+      "family": "star",
+      "isometry_commutator_norm": 0.5773502691896262,
+      "isometry_commutator_norm_formula": 0.5773502691896257,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.632993161855452,
+      "source_commutator_norm": 0.5527707983925673,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 3.265986323710904,
+      "Gamma_commutator_norm": 1.1055415967851336,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.20412414523193154,
+      "family": "star",
+      "isometry_commutator_norm": 0.5773502691896258,
+      "isometry_commutator_norm_formula": 0.5773502691896257,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.632993161855452,
+      "source_commutator_norm": 0.5527707983925668,
+      "subset_zero_based": [
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 2.3094010767585034,
+      "Gamma_commutator_norm": 0.816496580927727,
+      "L": 3,
+      "b": 2,
+      "epsilon": 0.20412414523193154,
+      "family": "star",
+      "isometry_commutator_norm": 0.8164965809277264,
+      "isometry_commutator_norm_formula": 0.816496580927726,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.3094010767585034,
+      "source_commutator_norm": 0.816496580927727,
+      "subset_zero_based": [
+        0,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.885618083164127,
+      "Gamma_commutator_norm": 0.6573421981221806,
+      "L": 3,
+      "b": 3,
+      "epsilon": 0.20412414523193154,
+      "family": "star",
+      "isometry_commutator_norm": 1.0000000000000007,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.8284271247461903,
+      "source_commutator_norm": 0.986013297183271,
+      "subset_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.282842712474619,
+      "Gamma_commutator_norm": 0.09996874511566109,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.017677669529663688,
+      "family": "star",
+      "isometry_commutator_norm": 0.4999999999999999,
+      "isometry_commutator_norm_formula": 0.5,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.1414213562373095,
+      "source_commutator_norm": 0.049984372557830545,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.282842712474619,
+      "Gamma_commutator_norm": 0.09996874511566117,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.017677669529663688,
+      "family": "star",
+      "isometry_commutator_norm": 0.4999999999999999,
+      "isometry_commutator_norm_formula": 0.5,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.1414213562373095,
+      "source_commutator_norm": 0.049984372557830586,
+      "subset_zero_based": [
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.2,
+      "Gamma_commutator_norm": 0.0707106781186548,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.017677669529663688,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865474,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.2,
+      "source_commutator_norm": 0.0707106781186548,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.2,
+      "Gamma_commutator_norm": 0.07071067811865486,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.017677669529663688,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865474,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.2,
+      "source_commutator_norm": 0.07071067811865486,
+      "subset_zero_based": [
+        1,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.1414213562373095,
+      "Gamma_commutator_norm": 0.05000000000000006,
+      "L": 4,
+      "b": 4,
+      "epsilon": 0.017677669529663688,
+      "family": "star",
+      "isometry_commutator_norm": 1.0,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.282842712474619,
+      "source_commutator_norm": 0.10000000000000012,
+      "subset_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.414213562373095,
+      "Gamma_commutator_norm": 0.49607837082461126,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.08838834764831843,
+      "family": "star",
+      "isometry_commutator_norm": 0.5000000000000001,
+      "isometry_commutator_norm_formula": 0.5,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.7071067811865475,
+      "source_commutator_norm": 0.24803918541230563,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.414213562373095,
+      "Gamma_commutator_norm": 0.4960783708246114,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.08838834764831843,
+      "family": "star",
+      "isometry_commutator_norm": 0.5000000000000001,
+      "isometry_commutator_norm_formula": 0.5,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.7071067811865475,
+      "source_commutator_norm": 0.2480391854123057,
+      "subset_zero_based": [
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.0,
+      "Gamma_commutator_norm": 0.35355339059327456,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.08838834764831843,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865478,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0,
+      "source_commutator_norm": 0.35355339059327456,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.0,
+      "Gamma_commutator_norm": 0.3535533905932742,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.08838834764831843,
+      "family": "star",
+      "isometry_commutator_norm": 0.707106781186548,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0,
+      "source_commutator_norm": 0.3535533905932742,
+      "subset_zero_based": [
+        1,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.7071067811865475,
+      "Gamma_commutator_norm": 0.2500000000000004,
+      "L": 4,
+      "b": 4,
+      "epsilon": 0.08838834764831843,
+      "family": "star",
+      "isometry_commutator_norm": 1.0000000000000004,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.414213562373095,
+      "source_commutator_norm": 0.5000000000000008,
+      "subset_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.82842712474619,
+      "Gamma_commutator_norm": 0.9682458365518553,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.17677669529663687,
+      "family": "star",
+      "isometry_commutator_norm": 0.5000000000000001,
+      "isometry_commutator_norm_formula": 0.5,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.414213562373095,
+      "source_commutator_norm": 0.4841229182759276,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.82842712474619,
+      "Gamma_commutator_norm": 0.9682458365518553,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.17677669529663687,
+      "family": "star",
+      "isometry_commutator_norm": 0.5000000000000001,
+      "isometry_commutator_norm_formula": 0.5,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.414213562373095,
+      "source_commutator_norm": 0.4841229182759276,
+      "subset_zero_based": [
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.0,
+      "Gamma_commutator_norm": 0.7071067811865483,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.17677669529663687,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865478,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.0,
+      "source_commutator_norm": 0.7071067811865483,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.0,
+      "Gamma_commutator_norm": 0.7071067811865488,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.17677669529663687,
+      "family": "star",
+      "isometry_commutator_norm": 0.7071067811865478,
+      "isometry_commutator_norm_formula": 0.7071067811865476,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.0,
+      "source_commutator_norm": 0.7071067811865488,
+      "subset_zero_based": [
+        1,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.414213562373095,
+      "Gamma_commutator_norm": 0.5000000000000006,
+      "L": 4,
+      "b": 4,
+      "epsilon": 0.17677669529663687,
+      "family": "star",
+      "isometry_commutator_norm": 1.0000000000000004,
+      "isometry_commutator_norm_formula": 1.0,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.82842712474619,
+      "source_commutator_norm": 1.000000000000001,
+      "subset_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.4000000000000001,
+      "Gamma_commutator_norm": 0.1413329402510258,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.025,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.336808689942018e-19,
+      "isometry_commutator_squared_norm": 0.0025000000000000005,
+      "isometry_commutator_squared_norm_formula": 0.002500000000000001,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.20000000000000004,
+      "source_commutator_norm": 0.0706664701255129,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.4000000000000001,
+      "Gamma_commutator_norm": 0.14133294025102583,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.025,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.336808689942018e-19,
+      "isometry_commutator_squared_norm": 0.0025000000000000005,
+      "isometry_commutator_squared_norm_formula": 0.002500000000000001,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.20000000000000004,
+      "source_commutator_norm": 0.07066647012551291,
+      "subset_zero_based": [
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.283196045170126,
+      "Gamma_commutator_norm": 0.10000000000000003,
+      "L": 2,
+      "b": 2,
+      "epsilon": 0.025,
+      "family": "product",
+      "isometry_commutator_gram_residual": 8.673617379884035e-19,
+      "isometry_commutator_squared_norm": 0.0050125000000000005,
+      "isometry_commutator_squared_norm_formula": 0.005012500000000001,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.283196045170126,
+      "source_commutator_norm": 0.10000000000000003,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.0,
+      "Gamma_commutator_norm": 0.6959705453537529,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.125,
+      "family": "product",
+      "isometry_commutator_gram_residual": 0.0,
+      "isometry_commutator_squared_norm": 0.0625,
+      "isometry_commutator_squared_norm_formula": 0.0625,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0,
+      "source_commutator_norm": 0.34798527267687646,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.0,
+      "Gamma_commutator_norm": 0.6959705453537528,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.125,
+      "family": "product",
+      "isometry_commutator_gram_residual": 0.0,
+      "isometry_commutator_squared_norm": 0.0625,
+      "isometry_commutator_squared_norm_formula": 0.0625,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0,
+      "source_commutator_norm": 0.3479852726768764,
+      "subset_zero_based": [
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.4577379737113252,
+      "Gamma_commutator_norm": 0.5000000000000001,
+      "L": 2,
+      "b": 2,
+      "epsilon": 0.125,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.3877787807814457e-17,
+      "isometry_commutator_squared_norm": 0.1328125,
+      "isometry_commutator_squared_norm_formula": 0.1328125,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.4577379737113252,
+      "source_commutator_norm": 0.5000000000000001,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 4.0,
+      "Gamma_commutator_norm": 1.3228756555322962,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.25,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.7755575615628914e-17,
+      "isometry_commutator_squared_norm": 0.24999999999999997,
+      "isometry_commutator_squared_norm_formula": 0.25,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.0,
+      "source_commutator_norm": 0.6614378277661481,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 4.0,
+      "Gamma_commutator_norm": 1.3228756555322965,
+      "L": 2,
+      "b": 1,
+      "epsilon": 0.25,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.7755575615628914e-17,
+      "isometry_commutator_squared_norm": 0.24999999999999997,
+      "isometry_commutator_squared_norm_formula": 0.25,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.0,
+      "source_commutator_norm": 0.6614378277661482,
+      "subset_zero_based": [
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 3.1622776601683795,
+      "Gamma_commutator_norm": 1.0000000000000002,
+      "L": 2,
+      "b": 2,
+      "epsilon": 0.25,
+      "family": "product",
+      "isometry_commutator_gram_residual": 5.551115123125783e-17,
+      "isometry_commutator_squared_norm": 0.625,
+      "isometry_commutator_squared_norm_formula": 0.625,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 3.1622776601683795,
+      "source_commutator_norm": 1.0000000000000002,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.32659863237109044,
+      "Gamma_commutator_norm": 0.11542193128787194,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.020412414523193152,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.5178830414797062e-18,
+      "isometry_commutator_squared_norm": 0.001666666666666667,
+      "isometry_commutator_squared_norm_formula": 0.001666666666666667,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.16329931618554522,
+      "source_commutator_norm": 0.05771096564393597,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.32659863237109044,
+      "Gamma_commutator_norm": 0.11542193128787202,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.020412414523193152,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.336808689942018e-19,
+      "isometry_commutator_squared_norm": 0.0016666666666666666,
+      "isometry_commutator_squared_norm_formula": 0.001666666666666667,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.16329931618554522,
+      "source_commutator_norm": 0.05771096564393601,
+      "subset_zero_based": [
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.23113247764479625,
+      "Gamma_commutator_norm": 0.08164965809277265,
+      "L": 3,
+      "b": 2,
+      "epsilon": 0.020412414523193152,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.168404344971009e-18,
+      "isometry_commutator_squared_norm": 0.00333888888888889,
+      "isometry_commutator_squared_norm_formula": 0.0033388888888888895,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.23113247764479625,
+      "source_commutator_norm": 0.08164965809277265,
+      "subset_zero_based": [
+        0,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.18887581654111804,
+      "Gamma_commutator_norm": 0.06669443865981742,
+      "L": 3,
+      "b": 3,
+      "epsilon": 0.020412414523193152,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.6020852139652106e-18,
+      "isometry_commutator_squared_norm": 0.005016666666666666,
+      "isometry_commutator_squared_norm_formula": 0.0050166666666666675,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.28331372481167705,
+      "source_commutator_norm": 0.10004165798972613,
+      "subset_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.6329931618554523,
+      "Gamma_commutator_norm": 0.5713045500334217,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.10206207261596577,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.0816681711721685e-17,
+      "isometry_commutator_squared_norm": 0.041666666666666706,
+      "isometry_commutator_squared_norm_formula": 0.04166666666666668,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.8164965809277261,
+      "source_commutator_norm": 0.28565227501671087,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.6329931618554523,
+      "Gamma_commutator_norm": 0.5713045500334206,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.10206207261596577,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.0816681711721685e-17,
+      "isometry_commutator_squared_norm": 0.041666666666666664,
+      "isometry_commutator_squared_norm_formula": 0.04166666666666668,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.8164965809277261,
+      "source_commutator_norm": 0.2856522750167103,
+      "subset_zero_based": [
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 1.1785113019775795,
+      "Gamma_commutator_norm": 0.4082482904638633,
+      "L": 3,
+      "b": 2,
+      "epsilon": 0.10206207261596577,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.163336342344337e-17,
+      "isometry_commutator_squared_norm": 0.0868055555555556,
+      "isometry_commutator_squared_norm_formula": 0.08680555555555558,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.1785113019775795,
+      "source_commutator_norm": 0.4082482904638633,
+      "subset_zero_based": [
+        0,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 0.9813067629253164,
+      "Gamma_commutator_norm": 0.33678765702728203,
+      "L": 3,
+      "b": 3,
+      "epsilon": 0.10206207261596577,
+      "family": "product",
+      "isometry_commutator_gram_residual": 8.326672684688674e-17,
+      "isometry_commutator_squared_norm": 0.13541666666666669,
+      "isometry_commutator_squared_norm_formula": 0.1354166666666667,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.4719601443879746,
+      "source_commutator_norm": 0.5051814855409229,
+      "subset_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 3.2659863237109046,
+      "Gamma_commutator_norm": 1.1055415967851348,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.20412414523193154,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.1102230246251565e-16,
+      "isometry_commutator_squared_norm": 0.16666666666666669,
+      "isometry_commutator_squared_norm_formula": 0.1666666666666667,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.6329931618554523,
+      "source_commutator_norm": 0.5527707983925674,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 3.2659863237109046,
+      "Gamma_commutator_norm": 1.105541596785134,
+      "L": 3,
+      "b": 1,
+      "epsilon": 0.20412414523193154,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.1102230246251565e-16,
+      "isometry_commutator_squared_norm": 0.16666666666666666,
+      "isometry_commutator_squared_norm_formula": 0.1666666666666667,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.6329931618554523,
+      "source_commutator_norm": 0.552770798392567,
+      "subset_zero_based": [
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 2.4944382578492945,
+      "Gamma_commutator_norm": 0.8164965809277271,
+      "L": 3,
+      "b": 2,
+      "epsilon": 0.20412414523193154,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.220446049250313e-16,
+      "isometry_commutator_squared_norm": 0.388888888888889,
+      "isometry_commutator_squared_norm_formula": 0.388888888888889,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.4944382578492945,
+      "source_commutator_norm": 0.8164965809277271,
+      "subset_zero_based": [
+        0,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 1.1102230246251565e-16,
+      "Gamma_commutator_bound": 2.17732421580727,
+      "Gamma_commutator_norm": 0.6938886664887111,
+      "L": 3,
+      "b": 3,
+      "epsilon": 0.20412414523193154,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.440892098500626e-16,
+      "isometry_commutator_squared_norm": 0.6666666666666665,
+      "isometry_commutator_squared_norm_formula": 0.666666666666667,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 3.265986323710905,
+      "source_commutator_norm": 1.0408329997330668,
+      "subset_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.282842712474619,
+      "Gamma_commutator_norm": 0.09996874511566116,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.017677669529663688,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.336808689942018e-19,
+      "isometry_commutator_squared_norm": 0.001250000000000003,
+      "isometry_commutator_squared_norm_formula": 0.00125,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.1414213562373095,
+      "source_commutator_norm": 0.04998437255783058,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.282842712474619,
+      "Gamma_commutator_norm": 0.09996874511566124,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.017677669529663688,
+      "family": "product",
+      "isometry_commutator_gram_residual": 4.336808689942018e-19,
+      "isometry_commutator_squared_norm": 0.0012500000000000005,
+      "isometry_commutator_squared_norm_formula": 0.00125,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.1414213562373095,
+      "source_commutator_norm": 0.04998437255783062,
+      "subset_zero_based": [
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.200124960961895,
+      "Gamma_commutator_norm": 0.07071067811865486,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.017677669529663688,
+      "family": "product",
+      "isometry_commutator_gram_residual": 8.673617379884035e-19,
+      "isometry_commutator_squared_norm": 0.0025031250000000027,
+      "isometry_commutator_squared_norm_formula": 0.002503125,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.200124960961895,
+      "source_commutator_norm": 0.07071067811865486,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.200124960961895,
+      "Gamma_commutator_norm": 0.07071067811865495,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.017677669529663688,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.3010426069826053e-18,
+      "isometry_commutator_squared_norm": 0.0025031250000000023,
+      "isometry_commutator_squared_norm_formula": 0.002503125,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.200124960961895,
+      "source_commutator_norm": 0.07071067811865495,
+      "subset_zero_based": [
+        1,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.14168627315304755,
+      "Gamma_commutator_norm": 0.0500312402404738,
+      "L": 4,
+      "b": 4,
+      "epsilon": 0.017677669529663688,
+      "family": "product",
+      "isometry_commutator_gram_residual": 3.469446951953614e-18,
+      "isometry_commutator_squared_norm": 0.005018750000000004,
+      "isometry_commutator_squared_norm_formula": 0.00501875,
+      "precision_fraction": 0.1,
+      "source_commutator_bound": 0.2833725463060951,
+      "source_commutator_norm": 0.1000624804809476,
+      "subset_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.414213562373095,
+      "Gamma_commutator_norm": 0.496078370824612,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.08838834764831843,
+      "family": "product",
+      "isometry_commutator_gram_residual": 3.469446951953614e-18,
+      "isometry_commutator_squared_norm": 0.03125000000000001,
+      "isometry_commutator_squared_norm_formula": 0.031249999999999993,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.7071067811865475,
+      "source_commutator_norm": 0.248039185412306,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.414213562373095,
+      "Gamma_commutator_norm": 0.49607837082461126,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.08838834764831843,
+      "family": "product",
+      "isometry_commutator_gram_residual": 3.469446951953614e-18,
+      "isometry_commutator_squared_norm": 0.031249999999999997,
+      "isometry_commutator_squared_norm_formula": 0.031249999999999993,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 0.7071067811865475,
+      "source_commutator_norm": 0.24803918541230563,
+      "subset_zero_based": [
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.0155048005794949,
+      "Gamma_commutator_norm": 0.35355339059327495,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.08838834764831843,
+      "family": "product",
+      "isometry_commutator_gram_residual": 6.938893903907228e-18,
+      "isometry_commutator_squared_norm": 0.06445312500000004,
+      "isometry_commutator_squared_norm_formula": 0.06445312499999999,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0155048005794949,
+      "source_commutator_norm": 0.35355339059327495,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.0155048005794949,
+      "Gamma_commutator_norm": 0.353553390593275,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.08838834764831843,
+      "family": "product",
+      "isometry_commutator_gram_residual": 6.938893903907228e-18,
+      "isometry_commutator_squared_norm": 0.06445312500000003,
+      "isometry_commutator_squared_norm_formula": 0.06445312499999999,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.0155048005794949,
+      "source_commutator_norm": 0.353553390593275,
+      "subset_zero_based": [
+        1,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 0.7395099728874519,
+      "Gamma_commutator_norm": 0.2538762001448738,
+      "L": 4,
+      "b": 4,
+      "epsilon": 0.08838834764831843,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.7755575615628914e-17,
+      "isometry_commutator_squared_norm": 0.13671874999999997,
+      "isometry_commutator_squared_norm_formula": 0.13671874999999997,
+      "precision_fraction": 0.5,
+      "source_commutator_bound": 1.4790199457749038,
+      "source_commutator_norm": 0.5077524002897476,
+      "subset_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.82842712474619,
+      "Gamma_commutator_norm": 0.9682458365518549,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.17677669529663687,
+      "family": "product",
+      "isometry_commutator_gram_residual": 5.551115123125783e-17,
+      "isometry_commutator_squared_norm": 0.12500000000000014,
+      "isometry_commutator_squared_norm_formula": 0.12499999999999997,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.414213562373095,
+      "source_commutator_norm": 0.48412291827592746,
+      "subset_zero_based": [
+        0
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.82842712474619,
+      "Gamma_commutator_norm": 0.9682458365518546,
+      "L": 4,
+      "b": 1,
+      "epsilon": 0.17677669529663687,
+      "family": "product",
+      "isometry_commutator_gram_residual": 2.7755575615628914e-17,
+      "isometry_commutator_squared_norm": 0.12499999999999996,
+      "isometry_commutator_squared_norm_formula": 0.12499999999999997,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 1.414213562373095,
+      "source_commutator_norm": 0.4841229182759273,
+      "subset_zero_based": [
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.121320343559642,
+      "Gamma_commutator_norm": 0.7071067811865485,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.17677669529663687,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.1102230246251565e-16,
+      "isometry_commutator_squared_norm": 0.2812500000000003,
+      "isometry_commutator_squared_norm_formula": 0.2812499999999999,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.121320343559642,
+      "source_commutator_norm": 0.7071067811865485,
+      "subset_zero_based": [
+        0,
+        1
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 2.121320343559642,
+      "Gamma_commutator_norm": 0.7071067811865482,
+      "L": 4,
+      "b": 2,
+      "epsilon": 0.17677669529663687,
+      "family": "product",
+      "isometry_commutator_gram_residual": 5.551115123125783e-17,
+      "isometry_commutator_squared_norm": 0.2812500000000001,
+      "isometry_commutator_squared_norm_formula": 0.2812499999999999,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 2.121320343559642,
+      "source_commutator_norm": 0.7071067811865482,
+      "subset_zero_based": [
+        1,
+        3
+      ]
+    },
+    {
+      "Gamma_affine_identity_residual": 0.0,
+      "Gamma_commutator_bound": 1.6583123951776997,
+      "Gamma_commutator_norm": 0.5303300858899118,
+      "L": 4,
+      "b": 4,
+      "epsilon": 0.17677669529663687,
+      "family": "product",
+      "isometry_commutator_gram_residual": 1.1102230246251565e-16,
+      "isometry_commutator_squared_norm": 0.6874999999999999,
+      "isometry_commutator_squared_norm_formula": 0.6874999999999998,
+      "precision_fraction": 1.0,
+      "source_commutator_bound": 3.3166247903553994,
+      "source_commutator_norm": 1.0606601717798236,
+      "subset_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}
