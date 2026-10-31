@@ -12,7 +12,7 @@ Q_{\mathrm{online}}
 \frac{\min\{A,\sqrt L\}}{\epsilon}
 \right),
 \qquad
-0<\epsilon\le\frac{1}{2\sqrt{2L}}.
+0\lt \epsilon\le\frac{1}{2\sqrt{2L}}.
 ```
 
 All requested expectations must be accurate to additive error $`\epsilon`$, jointly with probability at least $`2/3`$. The bound counts preprocessing and every later source invocation. It applies to worst-case expected cost and to a cap on every execution; logarithmic confidence and estimation factors are suppressed.

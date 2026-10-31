@@ -60,7 +60,7 @@ An invocation controlled by a quantum register costs one whole query, even when 
 **Theorem.** Suppose
 
 ```math
-0<\epsilon\leq\frac{1}{2\sqrt{2L}},
+0\lt \epsilon\leq\frac{1}{2\sqrt{2L}},
 \qquad
 c_* = 1-\frac{2\sqrt2}{3}>0.
 ```

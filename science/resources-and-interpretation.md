@@ -13,7 +13,7 @@ For a known menu of $`L`$ norm-bounded observables and predetermined batch sizes
 
 ```math
 Q=\widetilde\Theta\!\left(\frac{\min\{A,\sqrt L\}}{\epsilon}\right),
-\qquad 0<\epsilon\leq\frac{1}{2\sqrt{2L}}.
+\qquad 0\lt \epsilon\leq\frac{1}{2\sqrt{2L}}.
 ```
 
 This includes preprocessing and every invocation of $`U`$, $`U^\dagger`$, or an allowed controlled version. The lower bound permits arbitrary persistent quantum and classical memory. The [upper bounds](upper-bounds.md) use existing batch estimators.

@@ -66,7 +66,7 @@ Q_{\mathrm{online}}
 =\widetilde\Theta\!\left(
 \frac{\min\{\sqrt{RT},\sqrt L\}}{\epsilon}
 \right),
-\qquad 0<\epsilon\le\frac{1}{2\sqrt{2L}}.
+\qquad 0\lt \epsilon\le\frac{1}{2\sqrt{2L}}.
 ```
 
 The same total number of answers can therefore require different source access depending on how many answer deadlines intervene. Before saturation at the cost of the whole menu, splitting one batch into more rounds increases the worst-case source cost.

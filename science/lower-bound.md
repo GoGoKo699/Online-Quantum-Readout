@@ -9,7 +9,7 @@ A=\sum_{r=1}^{R}\sqrt{b_r},
 \qquad
 c_* = 1-\frac{2\sqrt2}{3},
 \qquad
-0<\epsilon\leq\frac{1}{2\sqrt{2L}}.
+0\lt \epsilon\leq\frac{1}{2\sqrt{2L}}.
 ```
 
 We prove that the expected total number $`Q`$ of source calls, averaged over the hard inputs and requests specified below, satisfies
@@ -42,7 +42,7 @@ c=\sqrt{1-s^2},
 |\psi_x\rangle=c|r\rangle+s|v_x\rangle.
 ```
 
-The precision assumption gives $`0<s\leq 1/\sqrt2`$ and $`c\geq 1/\sqrt2`$. Use the public observables
+The precision assumption gives $`0\lt s\leq 1/\sqrt2`$ and $`c\geq 1/\sqrt2`$. Use the public observables
 
 ```math
 O_i=|r\rangle\langle i|+|i\rangle\langle r|.
@@ -219,11 +219,11 @@ The last factor is the probability that the classical execution actually invokes
 
 The synchronized circuit is a mathematical dilation of the adaptive algorithm. It need not be physically run as a padded circuit. Its activity probabilities record the invocations of the original classical branches, including branches whose stopping decisions depend on information about $`x`$.
 
-Let $`N_{<r}`$ count all source calls before $`S_r`$ is revealed. Starting from $`\langle K\rangle=0`$, the bound above implies
+Let $`N_{\lt r}`$ count all source calls before $`S_r`$ is revealed. Starting from $`\langle K\rangle=0`$, the bound above implies
 
 ```math
-\mathbb E\langle K\rangle_{<r}
-\leq 4s\mathbb E N_{<r}
+\mathbb E\langle K\rangle_{\lt r}
+\leq 4s\mathbb E N_{\lt r}
 \leq4sQ.
 ```
 
@@ -233,7 +233,7 @@ Let $`q_r`$ count the calls after $`S_r`$ is revealed and before all its answers
 \sum_{r=1}^{R}\mathbb E q_r\leq Q.
 ```
 
-Calls made before a reveal but outside one of these intervals are still included in $`Q`$ and in the appropriate later $`N_{<r}`$. Keeping them outside the sum can only weaken the lower bound.
+Calls made before a reveal but outside one of these intervals are still included in $`Q`$ and in the appropriate later $`N_{\lt r}`$. Keeping them outside the sum can only weaken the lower bound.
 
 ## 5. The next subset is independent of the entire prefix
 
@@ -251,7 +251,7 @@ Let $`W_{r,\mathrm{in}}`$ be the average expectation of $`\Gamma_{S_r}`$ immedia
 
 ```math
 W_{r,\mathrm{in}}
-=1-\frac{2}{L}\mathbb E\langle K\rangle_{<r}
+=1-\frac{2}{L}\mathbb E\langle K\rangle_{\lt r}
 \geq1-\frac{8sQ}{L}.
 ```
 
@@ -332,7 +332,7 @@ Q\geq\frac{c_*}{16\epsilon}
 
 This summation is valid even when the prefix budget is already large enough that an individual lower bound on $`\mathbb E q_r`$ becomes negative. No separate assumption that every round performs new work is made. The denominator accounts for the possibility of spending enough source calls to learn the entire menu before later requests arrive.
 
-More generally, if every round has average sign error at most $`\delta<1/2`$, the same proof replaces $`c_*`$ by
+More generally, if every round has average sign error at most $`\delta\lt 1/2`$, the same proof replaces $`c_*`$ by
 
 ```math
 c(\delta)=1-2\sqrt{\delta(1-\delta)}.
@@ -350,7 +350,7 @@ The truncated algorithm has expected query count $`Q_n\leq Q`$ and, in each roun
 \delta_n=\frac13+\frac{Q}{n+1}.
 ```
 
-For sufficiently large $`n`$, $`\delta_n<1/2`$. Apply the finite-cap argument with $`c(\delta_n)`$ to obtain
+For sufficiently large $`n`$, $`\delta_n\lt 1/2`$. Apply the finite-cap argument with $`c(\delta_n)`$ to obtain
 
 ```math
 Q\geq Q_n

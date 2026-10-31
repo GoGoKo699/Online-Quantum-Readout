@@ -5,7 +5,7 @@ The [main lower bound](lower-bound.md) uses rank-two observables that need not c
 Throughout, let
 
 ```math
-0<\epsilon\leq\frac{1}{2\sqrt{2L}},
+0\lt \epsilon\leq\frac{1}{2\sqrt{2L}},
 \qquad
 A=\sum_{r=1}^{R}\sqrt{b_r},
 \qquad
@@ -187,7 +187,7 @@ They also hold for inverse queries and controlled queries. The active-invocation
 Let $`Q`$ be the expected total number of source calls under uniform hidden inputs and independent uniform request subsets. Let $`q_r`$ count the invocations made after the reveal in round $`r`$ and before its answers are returned. The global occupation budget now gives
 
 ```math
-\mathbb E\langle K\rangle_{<r}
+\mathbb E\langle K\rangle_{\lt r}
 \leq4a\sqrt L\kappa Q.
 ```
 
@@ -256,7 +256,7 @@ It also prepares the target from the same known reference state:
 V_x|\perp\rangle=|0\rangle_f|\phi_x\rangle=|\psi_x\rangle.
 ```
 
-For this completion, repeated calls amplify all the small rotations at once. Choose $`m`$ to be an integer nearest to $`\pi/(4\theta)`$. Since $`0<\theta\leq\pi/4`$, $`m\geq1`$ and
+For this completion, repeated calls amplify all the small rotations at once. Choose $`m`$ to be an integer nearest to $`\pi/(4\theta)`$. Since $`0\lt \theta\leq\pi/4`$, $`m\geq1`$ and
 
 ```math
 \left|m\theta-\frac\pi4\right|\leq\frac\theta2.
