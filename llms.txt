@@ -1,0 +1,27 @@
+# Online Quantum Readout
+
+This repository studies the worst-case source-query cost of answering sequentially revealed batches of quantum expectation-value requests. The entire finite menu is known, source access continues throughout, and retained quantum/classical memory is unrestricted.
+
+## Scientific route
+
+- Overview and principal result: README.md
+- Connected reading route: science/README.md
+- Exact model, quantifiers, cost conventions and theorem: science/model-and-theorem.md
+- Existing simultaneous estimator, adaptive batch upper bounds and the offline comparison: science/upper-bounds.md
+- Star-family lower bound, hidden-input purification, exact commutators, fresh-request progress and expected-query stopping: science/lower-bound.md
+- Commuting product-state witness, physical qubit accounting and easier alternative source completion: science/commuting-witness.md
+- Known-gate/SELECT costs, precision geometry and operational meaning: science/resources-and-interpretation.md
+- Primary model comparisons and literature-review limits: references/related-work.md
+- Bibliographic metadata and checked versions: references/bibliography.bib
+- Reproduction commands, observed outputs and finite-check limits: verification/README.md
+- Executable verification and reference result: verification/check_bounds.py, verification/results.json
+
+## Essential distinctions
+
+The main theorem concerns a worst-case source unitary and known observable menu. It does not claim hardness for every implementation of the same prepared state. A coherently controlled oracle invocation costs a full query; a classical branch on which no invocation occurs costs zero. The theorem includes all preprocessing and input-dependent stopping.
+
+Batch sizes are predetermined. Batch identities may depend on earlier answers for the upper guarantee. The lower bound uses independently drawn fresh subsets, with repetition permitted across rounds. The direct offline-versus-online comparison uses an oblivious list, not an adaptively generated transcript viewed retrospectively.
+
+The matching regime is epsilon at most 1/(2 sqrt(2L)). The all-menu endpoint is essential. Huggins et al. supply the simultaneous estimator; the contribution here is the sequential-revelation lower bound and matching schedule comparison. Known observable operations and source implementation costs remain separate from the source-query theorem.
+
+Use the exact theorem and proof as authoritative. Finite numerical verification does not certify asymptotic correctness, novelty, universal runtime advantage or future hosted rendering.
