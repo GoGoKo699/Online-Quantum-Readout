@@ -49,6 +49,14 @@ The main construction uses a source space of dimension $`L+2`$ and rank-two obse
 
 Both lower bounds specify the **full preparation unitary**, including its action away from the designated input. They are minimax statements over valid source implementations. A different, natural rotation implementation of the same product states permits all hidden signs to be read much more cheaply. The [explicit comparison](science/commuting-witness.md#5-why-the-oracle-completion-must-be-specified) is part of the scientific scope.
 
+## Learn the project
+
+The single educational anchor is **Andrew M. Childs, *Lecture Notes on Quantum Algorithms* (17 April 2025)**. The [Childs bridge](learning/childs-bridge.md) identifies the relevant sections, translates the query model and notation, and develops the steps from amplitude estimation and adversary bounds to sequentially revealed readout requests.
+
+The [30-milestone map](learning/milestones.md) gives a common route through the project. Its **12 background/preliminaries milestones** assemble the source, estimation and information-progress framework. Its **18 narrative/innovation milestones** connect the hard instance, fresh-request argument, matching schedules and source-completion limitations into the complete result. Every milestone has a central question, an understanding target, earlier dependencies, a conceptual connection and source pointers.
+
+Start with the [learning route](learning/README.md), then use the bridge alongside the milestones. The direct scientific route above remains the home of exact statements, proofs and reproduction.
+
 ## Reproduce the finite checks
 
 From the repository root:
